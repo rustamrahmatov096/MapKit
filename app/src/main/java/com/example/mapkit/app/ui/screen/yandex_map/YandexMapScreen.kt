@@ -288,8 +288,8 @@ class YandexMapScreen : BaseFragment(R.layout.screen_yandex), View.OnClickListen
 
     }
 
-
-    override fun onDismiss() {
+    override fun onDismiss(text:String) {
+        binding.txtSearch.text = text
         binding.cardSearch.visible()
     }
 

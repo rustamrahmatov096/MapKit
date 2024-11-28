@@ -66,17 +66,9 @@ class DetailsBottomDialog : BottomSheetDialogFragment() {
 
     }
 
-
-
-    override fun onDismiss(dialog: DialogInterface) {
-        super.onDismiss(dialog)
-        listener?.onDismiss()
-    }
-
     interface Callback {
         fun itemAdd(item: SearchResult)
         fun itemRemove(item: SearchResult)
-        fun onDismiss()
     }
 
     companion object {

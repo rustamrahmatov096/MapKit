@@ -28,6 +28,7 @@ class SearchBottomDialog : BottomSheetDialogFragment(), (SearchResult) -> Unit {
     private var listener: Callback? = null
     private var adapter: SearchResultAdapter? = null
     private val binding by viewBinding(DialogSearchBottomBinding::bind)
+    var txt = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -73,6 +74,7 @@ class SearchBottomDialog : BottomSheetDialogFragment(), (SearchResult) -> Unit {
             if (!text.isNullOrEmpty()) {
                 binding.btnClear.visible()
                 listener?.searchText(text.toString()) // Notify listener for search updates
+                txt = text.toString()
             } else {
                 binding.btnClear.gone()
                 updateSearchResults(emptyList()) // Clear results if search is empty
@@ -102,13 +104,13 @@ class SearchBottomDialog : BottomSheetDialogFragment(), (SearchResult) -> Unit {
 
     override fun onDismiss(dialog: DialogInterface) {
         super.onDismiss(dialog)
-        listener?.onDismiss()
+        listener?.onDismiss(txt)
     }
 
     interface Callback {
         fun itemClicked(item: SearchResult)
         fun searchText(query: String)
-        fun onDismiss()
+        fun onDismiss(text:String)
     }
 
     companion object {
