@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorSecondary">#829199</color>
+    <color name="colorBack">#E9EFF0</color>
+    <color name="colorIconTine">#82909B</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#941069</color>
+    <color name="green_main">#62C069</color>
+    <color name="green_main_dark">#1E4335</color>
+    <color name="green_home_lite_dark">#171F18</color>
+    <color name="green_dark_2">#0F1A14</color>
+    <color name="purple_700">#FFFFFF</color>
+    <color name="teal_200">#11BB91</color>
+    <color name="background_home_lite">#EBF0EB</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black2A">#2A2A2A</color>
+    <color name="grey_secondary">#616161</color>
+    <color name="grey_2">#B1B7B1</color>
+    <color name="greySecondary">#616161</color>
+    <color name="grey2">#B1B7B1</color>
+    <color name="grey_default">#999999</color>
+    <color name="divider_light">#F3F5F3</color>
+    <color name="divider_secondary">#E1E5E1</color>
+    <color name="home_widget">#292A2A2A</color>
+    <color name="yellow_wallet">#FEB913</color>
+
+    <color name="white_trans_20">#33FFFFFF</color>
+    <color name="white_trans_25">#40FFFFFF</color>
+    <color name="white_trans_50">#80FFFFFF</color>
+    <color name="white_trans_55">#8CFFFFFF</color>
+    <color name="white_trans_80">#CCFFFFFF</color>
+
+    <color name="black_trans_0">#00000000</color>
+    <color name="black_trans_20">#20000000</color>
+    <color name="black_trans_25">#25000000</color>
+    <color name="black_trans_50">#50000000</color>
+    <color name="black_trans_55">#55000000</color>
+    <color name="black_trans_80">#80000000</color>
+    <color name="black_trans_90">#8B000000</color>
+
+    <color name="color_text_primary">#263238</color>
+    <color name="color_text_secondary">#263238</color>
+
+    <color name="color_text_description">#88999C</color>
+    <color name="color_secondary_gray">#505C64</color>
+    <color name="color_background_gray">#E9EFF0</color>
+    <color name="color_text_error">#FF5721</color>
+    <color name="color_text_brand">#1AA180</color>
+    <color name="color_outcome">#FFF3EF</color>
+    <color name="color_income">#EEFAF7</color>
+    <color name="color_orange">#FBB100</color>
+    <color name="yellow_default">#F6C44C</color>
+    <color name="color_line">#17000000</color>
+    <color name="color_bg_pinview">#1A62C069</color>
+    <color name="color_stoke_pinview">#0FF0F5F0</color>
+
+    <color name="green_default">#62C069</color>
+    <color name="green">#1B5E20</color>
+    <color name="green_dark">#003300</color>
+    <color name="green_status_bar_auth">#181D1B</color>
+    <color name="green_light">#A5D6A7</color>
+    <color name="blue">#0288D1</color>
+    <color name="blue_dark">#005B9F</color>
+    <color name="blue_light">#81D4FA</color>
+    <color name="bg_light">#F7FAF7</color>
+
+    <color name="red_default">#EE4545</color>
+
+    <color name="white_light">#FFFFFF</color>
+    <color name="home_gradient_top">#1E4335</color>
+    <color name="home_gradient_bottom">#62C069</color>
+    <color name="icon_background">#F3F5F3</color>
+
+    <color name="color_background_primary">#FFFFFF</color>
+    <color name="color_background_secondary">#F7FAF7</color>
+    <color name="horizontal_line_color">#E1E5E1</color>
+    <color name="color_logo">#1D1D1D</color>
+    <color name="default_grey">#999999</color>
+    <color name="default_grey_secondary">#616161</color>
+    <color name="main_green_2">#2F7B54</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+
+    <color name="color_black_green">#19201E</color>
+    <color name="line_color">#F3F5F3</color>
+    <color name="bg_auto_screen">#0A1A11</color>
+
+</resources>

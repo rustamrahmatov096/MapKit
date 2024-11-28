@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ImageView.Corner.Top" parent="">
+        <item name="cornerSizeTopRight">@dimen/dp_20</item>
+        <item name="cornerSizeTopLeft">@dimen/dp_20</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <!--    TEXT-->
+    <style name="Text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/black2A</item>
+    </style>
+
+    <style name="Text2">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/black2A</item>
+    </style>
+
+    <!--    TEXT FONT-->
+
+    <style name="Text.100">
+        <item name="android:fontFamily">@font/inter_extra_light</item>
+    </style>
+
+    <style name="Text.400">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="Text.500">
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="Text.600">
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+    </style>
+
+    <style name="Text.700">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="Text.900">
+        <item name="android:fontFamily">@font/inter_extra_bold</item>
+    </style>
+
+    <style name="TotalBalance_Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:checkable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="ensureMinTouchTargetSize">false</item>
+        <item name="chipCornerRadius">@dimen/dp_10</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="chipMinTouchTargetSize">0dp</item>
+        <item name="chipStartPadding">@dimen/dp_8</item>
+        <item name="chipEndPadding">@dimen/dp_8</item>
+        <item name="android:paddingTop">@dimen/dp_6</item>
+        <item name="android:paddingBottom">@dimen/dp_6</item>
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+        <item name="chipIconEnabled">false</item>
+    </style>
+
+    <style name="Text.ToolbarSample">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="Widget.Xazna.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="Widget.Xazna.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <!-- Custom DatePickerDialog style -->
+    <style name="CustomDatePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:datePickerStyle">@style/CustomDatePicker</item>
+    </style>
+
+    <!-- Custom DatePicker style -->
+    <style name="CustomDatePicker" parent="android:Widget.Material.DatePicker">
+        <item name="android:headerBackground">@color/white</item>
+        <item name="android:dayOfWeekBackground">@color/white</item>
+        <item name="android:dayOfWeekTextAppearance">@style/CustomDayOfWeekTextAppearance</item>
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:divider">@drawable/custom_divider</item>
+    </style>
+
+    <!-- Custom text appearance for day of week -->
+    <style name="CustomDayOfWeekTextAppearance" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/black2A</item>
+    </style>
+
+</resources>

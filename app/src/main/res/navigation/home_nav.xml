@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.mapkit.app.ui.screen.home.HomeScreen"
+        android:label="HomeScreen"
+        tools:layout="@layout/screen_home" />
+
+    <fragment
+        android:id="@+id/transactionScreen"
+        android:name="com.example.mapkit.app.ui.screen.yandex_map.YandexMapScreen"
+        android:label="YandexMapScreen"
+        tools:layout="@layout/screen_yandex" />
+
+    <fragment
+        android:id="@+id/applicationsScreen"
+        android:name="com.example.mapkit.app.ui.screen.profile.ProfileScreen"
+        android:label="ProfileScreen"
+        tools:layout="@layout/screen_profile" />
+
+</navigation>

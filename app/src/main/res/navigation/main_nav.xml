@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/splashScreen">
+
+    <action
+        android:id="@+id/action_global_splashScreen"
+        app:destination="@id/splashScreen"
+        app:popUpTo="@id/main_nav"
+        app:popUpToInclusive="true" />
+
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.mapkit.app.ui.screen.splash.SplashScreen"
+        android:label="SplashScreen"
+        app:popUpTo="@id/main_nav"
+        app:popUpToInclusive="true"
+        tools:layout="@layout/screen_splash">
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.mapkit.app.ui.screen.main.MainScreen"
+        android:label="screen_main"
+        tools:layout="@layout/screen_main" />
+
+</navigation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="home_gradient_top">#1E4335</color>
+    <color name="home_gradient_bottom">#141414</color>
+
+    <color name="green_main_dark">#1E4335</color>
+
+    <color name="divider_light">#1E4335</color>
+    <color name="bg_light">#141414</color>
+
+    <color name="white_light">#1B1C1B</color>
+    <color name="icon_background">#2A2A2A</color>
+    <color name="color_background_primary">#1B1C1B</color>
+    <color name="color_background_secondary">#141414</color>
+    <color name="home_widget">#0AFFFFFF</color>
+    <color name="yellow_wallet">#FEB913</color>
+
+    <color name="background_home_lite">#141414</color>
+    <color name="color_text_primary">#FFFFFF</color>
+    <color name="color_text_description">#88999C</color>
+    <color name="color_secondary_gray">#505C64</color>
+    <color name="grey_secondary">#FFFFFF</color>
+    <color name="color_background_gray">#2A2A2A</color>
+    <color name="color_text_error">#FF5721</color>
+    <color name="color_text_brand">#1AA180</color>
+    <color name="color_outcome">#FFF3EF</color>
+    <color name="color_income">#EEFAF7</color>
+    <color name="color_orange">#FBB100</color>
+    <color name="yellow_default">#F6C44C</color>
+    <color name="color_line">#17000000</color>
+    <color name="color_bg_pinview">#1A62C069</color>
+    <color name="color_stoke_pinview">#0FF0F5F0</color>
+    <color name="black_trans_0">#00000000</color>
+    <color name="black2A">#FFFFFF</color>
+
+    <color name="horizontal_line_color">#3A3A3A</color>
+    <color name="color_logo">#FFFFFF</color>
+    <color name="default_grey_secondary">#616161</color>
+    <color name="main_green_2">#2F7B54</color>
+
+</resources>
