@@ -5,7 +5,7 @@ import android.content.pm.PackageManager
 import android.graphics.PointF
 import android.os.Bundle
 import android.view.View
-import androidx.core.app.ActivityCompat
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavController
@@ -54,8 +54,6 @@ class YandexMapScreen : BaseFragment(R.layout.screen_yandex), View.OnClickListen
     private lateinit var userLocationLayer: UserLocationLayer
     private lateinit var mapObjects: MapObjectCollection
 
-    private var isFirst = true
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -86,13 +84,9 @@ class YandexMapScreen : BaseFragment(R.layout.screen_yandex), View.OnClickListen
         )
 
         if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(
-                requireActivity(),
-                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
-                LOCATION_PERMISSION_REQUEST_CODE
-            )
+            requestPermissionLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION)
         } else {
-            enableUserLocation()
+            initializeMap()
         }
 
         binding.btnLocation.setOnClickListener {
@@ -107,9 +101,21 @@ class YandexMapScreen : BaseFragment(R.layout.screen_yandex), View.OnClickListen
 
     }
 
-    private fun enableUserLocation() {
+    private fun initializeMap() {
         val mapKit = MapKitFactory.getInstance()
         userLocationLayer = mapKit.createUserLocationLayer(binding.yandexMap.mapWindow)
+        enableUserLocation()
+    }
+
+    private val requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
+        if (isGranted) {
+            initializeMap()
+        } else {
+            toast("Location permission is required")
+        }
+    }
+
+    private fun enableUserLocation() {
 
         userLocationLayer.isVisible = true
         userLocationLayer.isHeadingEnabled = true
@@ -197,11 +203,16 @@ class YandexMapScreen : BaseFragment(R.layout.screen_yandex), View.OnClickListen
                             }
                         }
 
-                            val distanceText = if (distance!! >= 1000) {
+                        var distanceText = ""
+
+                        distance?.let {
+                            distanceText = if (distance >= 1000) {
                                 "%.1f km".format(distance / 1000)
                             } else {
                                 "%.1f m".format(distance)
                             }
+                        }
+
 
                             val point = it.obj?.geometry?.get(0)?.point
                             val name = it.obj?.name.orEmpty()
